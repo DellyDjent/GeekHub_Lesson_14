@@ -1,0 +1,341 @@
+footer {
+  background-color: $backgroundGrey;
+}
+
+.container-footer-nav {
+  background-color: #000;
+  .footer-nav {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1395px;
+    .copyright {
+      float: left;
+      font-family: $fontGothic;
+      color: $white;
+      font-size: 14px;
+      padding-top: 25px;
+    }
+  }
+}
+
+.list-footer-menu {
+  float: right;
+  overflow: hidden;
+  li {
+    float: left;
+    margin: 0 35px;
+    a {
+      text-align: center;
+      display: block;
+      font-family: $fontCode;
+      font-size: $small;
+      text-transform: uppercase;
+      color: $white;
+      padding: 25px 5px;
+      @include transition(0.5s);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.content-footers {
+  @include display-flex();
+  @include flex-direction(row);
+  @include justify-content (space-between);
+  font-family: $fontGothic;
+  font-size: 13px;
+  color: $white;
+  padding: 25px 0 30px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1395px;
+  h6 {
+    font-family: $fontGothic;
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 20px;
+  }
+}
+
+.first-block-footer,
+.second-block-footer{
+  width: 32.3%;
+}
+
+.third-block-footer {
+  width: 340px;
+}
+
+.about-us {
+  .link-learn-more {
+    display: block;
+    width: 122px;
+    margin: 30px 0 40px;
+    text-align: center;
+    font-family: $fontGothic;
+    font-size: 15px;
+    color: $white;
+    background-color: $black;
+    line-height: 2.6;
+    @include transition(.3s);
+    &:hover {
+      background-color: $yellow;
+      color: $black;
+    }
+  }
+}
+
+.photo-stream {
+  .list-photo-stream {
+    @include display-flex();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+  }
+  li {
+    margin: 0 5px 5px 0;
+  }
+}
+
+.second-block-footer {
+  .item-list-twitter {
+    background: url("../../img/twitter-birs-icon.png") left center no-repeat;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    a {
+      font-family: $fontGothic;
+      font-size: 13px;
+      color: $white;
+    }
+  }
+  .tag-days-ago {
+    display: block;
+    font-family: $fontGothic;
+    font-size: 8px;
+    color: $yellow;
+    margin-top: 5px;
+  }
+}
+
+.social-connecting {
+  overflow: hidden;
+  margin-top: 35px;
+  h6 {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.list-social-icon {
+  li {
+    display: inline-block;
+    a {
+      display: block;
+    }
+  }
+}
+
+.facebook {
+  background: url("../../img/facebook.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.google {
+  background: url("../../img/google-plus.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.twitter {
+  background: url("../../img/twitter.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.linkedin {
+  background: url("../../img/linkedin.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.you-tube {
+  background: url("../../img/you-tube.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.bloger {
+  background: url("../../img/bloger.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.rss {
+  background: url("../../img/rss.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.dribble {
+  background: url("../../img/dribbble.png") no-repeat;
+  padding: 15px 15px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.item-address {
+  background: url("../../img/adress.png") left center no-repeat;
+  padding: 10px 0 10px 45px ;
+  margin-bottom: 15px;
+}
+
+.item-phone {
+  background: url("../../img/phone.png") left center no-repeat;
+  padding: 10px 0 10px 45px ;
+  margin-bottom: 15px;
+  p:last-child {
+    padding-left: 48px;
+  }
+}
+
+.item-email {
+  background: url("../../img/email.png") left center no-repeat;
+  padding: 10px 0 10px 45px ;
+  margin-bottom: 15px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.email-field {
+  font-weight: bold;
+  width: 235px;
+  color: white;
+  background-color: $backgroundGrey;
+  border: none;
+  border-bottom: 2px solid $yellow;
+  padding: 2px 0;
+}
+
+.btn-sub {
+  background: url("../../img/email-icon.png") no-repeat;
+  width: 28px;
+  height: 28px;
+  border: none;
+  outline: none;
+  margin-left: -4px;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 992px) and (max-width: 1450px) {
+  .content-footers {
+    width: 100%;
+  }
+  .container-footer-nav .footer-nav {
+    width: 100%;
+  }
+  .list-footer-menu {
+    width: 50%;
+  }
+  .list-footer-menu li {
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-footers {
+    padding: 25px 50px 30px;
+    width: 100%;
+  }
+  .first-block-footer,
+  .second-block-footer,
+  .third-block-footer {
+    width: 45%;
+  }
+  .container-footer-nav .footer-nav {
+    width: 100%;
+  }
+  .list-footer-menu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .list-footer-menu li {
+    margin: 0;
+  }
+  .content-footers {
+    flex-wrap: wrap;
+  }
+  .social-connecting h6 {
+    float: none;
+    margin-right: 10px;
+  }
+  .container-footer-nav .footer-nav .copyright {
+    width: 50%;
+  }
+}
+//
+//@media (min-width: 600px) and (max-width: 767px) {
+//  .content-footers {
+//    padding: 25px 115px 30px;
+//    text-align: center;
+//  }
+//  .about-us .link-learn-more {
+//    margin: 30px auto;
+//  }
+//  .list-footer-menu {
+//    clear: both;
+//    float: none;
+//    width: 50%;
+//    margin: 0 auto;
+//  }
+//}
+
+
+@media (max-width: 767px) {
+  .content-footers {
+    padding: 25px 10px 30px;
+    width: 100%;
+  }
+  .first-block-footer,
+  .second-block-footer,
+  .third-block-footer {
+    width: 100%;
+  }
+  .container-footer-nav .footer-nav {
+    width: 100%;
+  }
+  .list-footer-menu {
+    clear: both;
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .list-footer-menu li {
+    margin: 0;
+  }
+  .content-footers {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .photo-stream .list-photo-stream {
+    justify-content: center;
+  }
+  h6, .list-social-icon {
+    text-align: center;
+  }
+  .second-block-footer,
+  .third-block-footer {
+    margin-top: 20px;
+  }
+  .social-connecting h6 {
+    float: none;
+    margin-right: 0;
+  }
+  .list-footer-menu li a {
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+  .about-us .link-learn-more {
+    margin: 30px auto;
+  }
+}
